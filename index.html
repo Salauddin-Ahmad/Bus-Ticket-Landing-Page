@@ -75,7 +75,7 @@
         </h1>
 
         <div class="flex justify-center">
-          <button class="btn bg-[#1cd100c3] ">Buy Tickets</button>
+        <a href="#select"><button class="btn bg-[#1cd100c3] ">Buy Tickets</button</a>  >
         </div>
       </div>
     </section>
@@ -205,7 +205,7 @@
       <!----------------------------------- Ticket Info section  Ends ---------------------------------------->
       <!------------------------------------ Select your seat section -------------------------------------->
 
-      <section class="container w-[93%] bg-white mt-10 mx-auto border-none rounded-2xl p-8 flex ">
+      <section id="select" class="container w-[93%] bg-white mt-10 mx-auto border-none rounded-2xl p-8 flex ">
         <!-- leftSIDE ticket seat  -->
         <div class=" w-[58%] ">
           <div>
@@ -380,7 +380,7 @@
 
           <div class="flex justify-between">
 
-            <div id="seat-name">
+            <div id="seat-name" >
               <h1 class="text-lg font-semibold -[#030712] p-4">
                 seat <span id="selected-seat-count">0</span>
               </h1>
@@ -405,7 +405,7 @@
             <h1 class="text-lg font-semibold -[#030712] p-4">
               Total Price
             </h1>
-            <span class="text-lg font-semibold -[#030712] p-5">0</span>
+            <span id="total-price" class="text-lg font-semibold -[#030712] p-5">0</span>
           </div>
 
 
@@ -477,8 +477,37 @@
 
       <script src="script.js"></script>
   </main>
-  <footer>
+  
 
+  <footer class="bg-[#030712] p-20 hidden">
+    <div class="flex justify-between mb-10">
+      <aside>
+        <div class="space-y-4 text-white">
+          <h1 class="text-4xl font-extrabold">Select My Ticket</h1>
+          <p>
+            Select My Ticket is reliable and secure online ticket booking platform. <br>
+             Keep an eye to get exclusive deals tailored for your needs.
+          </p>
+        </div>
+      </aside>
+      <div class="text-white">
+        <h1 class="text-xl font-semibold">Download our app</h1>
+        <a href=""><img src="./images/playstore.png" alt="" class="mt-4 pl-20" /></a>
+      </div>
+    </div>
+    <hr class="border-white p-5 border-dotted" />
+    <div class="flex justify-between">
+      <div>
+        <p class="text-inter text-white">
+          @all rights reserved, Select my Ticket 2022.
+        </p>
+      </div>
+      <div class="text-white flex gap-5">
+        <a href="#">Terms & conditions</a>
+        <a href="#">Return & refund policy</a>
+        <a href="#">Privacy policy</a>
+      </div>
+    </div>
   </footer>
 </body>
 
