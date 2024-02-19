@@ -13,6 +13,8 @@ let seatPriceDiplsay = document.getElementById('seat-price')
 
 
 const Totalprice = parseInt(document.getElementById('total-price').innerText)
+console.log(typeof Totalprice);
+
 
 const maxSeats = 4;
 let seatsSelected = 0;
@@ -65,19 +67,23 @@ seats.forEach(seat => {
 
       // create seat price and display price value
       let seatPrice = document.createElement('p');
-      let priceNum = 550;
-      seatPrice.innerText = priceNum;
-      let seatPriceDisplay = document.getElementById('seat-price');
-      seatPriceDisplay.appendChild(seatPrice);
+      let  priceNum = 550
+      let seatPriceNUM = seatPrice.innerText;
+      seatPriceNUM =  priceNum;
+      // const seatPriceNUM = parseInt(seatPrice.innerText);
+      console.log(seatPriceNUM) ;
+
+      seatPrice.style.paddingLeft = '25px';
+      seatPriceDiplsay.appendChild(priceNum);
 
       // Total price calculation 
-      let Totalprice = document.getElementById('total-price');
+      let Totalprice = document.getElementById('total-price').innerText;
+      Totalprice = parseFloat(Totalprice);
+      // let Total = parseInt(Totalprice.innerText);
+      // console.log(Total);
+      console.log(typeof Totalprice);
       Totalprice.innerText = seatsSelected * seatPrice.innerText;
-      // console.log(Totalprice);
-
-      // Grand total calculation
-      let grandTotal = document.getElementById('grand-Total');
-      grandTotal.innerText = Totalprice.innerText;
+      console.log(Totalprice.innerText);
 
 
 
@@ -88,54 +94,3 @@ seats.forEach(seat => {
     document.querySelector('#selected-seat-count').innerText = seatsSelectedDisplay;
   });
 });
-
-
-
-function couponButton() {
-const applyBtn = document.getElementById('coupon')
-let couponsValue = document.getElementById('applie-btn');
-couponsValue = couponsValue.value;
-console.log(couponsValue);
-
-}
-
-
-
-
-
-// function showModal() {
-//   // const Nav = document.getElementById('nav');
-//   // const leftSide = document.getElementById('leftSIDE');
-//   // const ticInfo = document.getElementById('ticket-info');
-//   // const Banner = document.getElementById('banner');
-//   // const Offer = document.getElementById('offer');
-//   // Offer.classList.add('hidden');
-//   // Nav.classList.add('hidden');
-//   // Banner.classList.add('hidden')
-//   // ticInfo.classList.add('hidden');
-//   // leftSide.classList.add('hidden');
-
-//   const modal = document.getElementById('modal');
-//   modal.classList.remove('hidden');
-
-
-// }
-
-// function hidemodal() {
-//   // const modal = document.getElementById('modal');
-//   // const close = document.getElementById('close');
-//   // const Nav = document.getElementById('nav');
-//   // const leftSide = document.getElementById('leftSIDE');
-//   // const ticInfo = document.getElementById('ticket-info');
-//   // const Banner = document.getElementById('banner');
-//   // const Offer = document.getElementById('offer');
-//   // Offer.classList.remove('hidden');
-//   // Nav.classList.remove('hidden');
-//   // Banner.classList.remove('hidden')
-//   // ticInfo.classList.add('hidden');
-//   // leftSide.classList.remove('hidden');
-//   modal.classList.add('hidden');
-
-// }
-
-

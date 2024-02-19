@@ -31,11 +31,11 @@
 
 </head>
 
-<body class="raleway">
+<body id="Body" class="raleway">
 
   <!-- -----------------------------------------  navbar ------------------------------- -->
   <nav>
-    <section class="container w-[85%] mx-auto pb-10">
+    <section id="nav" class="container w-[85%] mx-auto pb-10">
       <div class="navbar bg-base-100">
         <div class="navbar-start">
 
@@ -64,7 +64,7 @@
 
   <main>
     <!-- ---------------------------------------- banner  --------------------------------------- -->
-    <section class="container mx-auto mb-10 w-[95%]">
+    <section id="banner" class="container mx-auto mb-10 w-[95%]">
       <div class="bg-[url('./images/banner.png')]  bg-cover h-auto mx-auto pt-20 py-12 space-y-14">
         <h1 class="text-white text-4xl text-center font-bold "> End-to-End Travel with <br>
           <p class=" pt-6 text-[#1cd100ac] font-bold "> Get My Ticket</p>
@@ -75,14 +75,14 @@
         </h1>
 
         <div class="flex justify-center">
-        <a href="#select"><button class="btn bg-[#1cd100c3] ">Buy Tickets</button</a>  >
+          <a href="#select"><button class="btn bg-[#1cd100c3] ">Buy Tickets</button< /a> >
         </div>
       </div>
     </section>
     <!------------------------------------------ banner  -------------------------------------->
 
     <!------------------------------------  best offer section ------------------------------------------>
-    <section class="container mx-auto w-[95]">
+    <section id="offer" class="container mx-auto w-[95]">
       <h1 class="text-4xl text-center text-[#030712] pt-12 mb-10">Best offers for you</h1>
       <div class="flex flex-col md:flex-row mt-6 gap-4 px-3">
         <div class="w-[50%] h-[220px] max-h-56 bg-[#FFBF0F] rounded-md flex mx-auto">
@@ -125,7 +125,7 @@
     <!-------------------------------------  best offer section ------------------------------------------>
     <!-- ================================================================================================ -->
     <!----------------------------------- Ticket Info section  ---------------------------------------->
-    <section class="border-t-2 border-[#1dd100] BorderRAD bg-[#f7f8f8] mt-10 p-8">
+    <section id="ticket-info" class="border-t-2 border-[#1dd100] BorderRAD bg-[#f7f8f8] mt-10 p-8">
       <div class="space-y-5">
         <h1 class="text-4xl font-bold text-center">Get My Ticket</h1>
         <p class="text-inter text-lg text-center">
@@ -190,7 +190,7 @@
         <!-- middle -->
         <img src="./images/info-devider.png" alt="" />
         <!-- right column -->
-        <div class="flex flex-col justify-center">
+        <div class="flex flex-col justify-center mr-4 ">
           <div class="flex justify-center">
             <img src="images/fare.png" alt="" />
           </div>
@@ -205,28 +205,28 @@
       <!----------------------------------- Ticket Info section  Ends ---------------------------------------->
       <!------------------------------------ Select your seat section -------------------------------------->
 
-      <section id="select" class="container w-[93%] bg-white mt-10 mx-auto border-none rounded-2xl p-8 flex ">
+      <section id="leftSIDE" class="container w-[93%] bg-white mt-10 mx-auto border-none rounded-2xl p-8 flex ">
         <!-- leftSIDE ticket seat  -->
         <div class=" w-[58%] ">
-          <div>
+          <div class=" w-[165%]">
             <h1 class="text-2xl font-semibold mb-3">Select Your Seat</h1>
             <hr>
 
-            <div class="flex justify-between mt-4 mb-4 mr-6">
-              <div class="flex"> <img src="./images/seat-gray.png" alt="">
+            <div class="flex  justify-a mt-4 mb-4  w-full">
+              <div class="flex w-full">
+                <img src="./images/seat-gray.png" alt="">
                 <h1 class=" pl-3 text-lg text-slate-500">Available</h1>
               </div>
 
               <div class="flex">
                 <img src="./images/seat-green.png">
-                <h1 class="text-2xl font-semibold text-green-500">Selected</h1>
-
+                <h1 class="text-2xl font-semibold mr-8 text-green-500">Selected</h1>
               </div>
 
             </div>
             <hr>
-            <div class="flex justify-end mt-4">
-              <img class="btn bg-[#03071213] px-8  mr-4" src="./images/tabler-icon-steering-wheel.png" alt="">
+            <div class="flex flex-1 justify-end mt-4">
+              <img class="btn bg-[#03071213] px-8 mr-31" src="./images/tabler-icon-steering-wheel.png" alt="">
             </div>
           </div>
           <!----------------------- left side seat ----------------->
@@ -238,7 +238,7 @@
                 <button id="A1" class="seat px-10 py-4 bg-[#F7F8F8] rounded-xl">
                   A1
                 </button>
-                <button id="A2" class="seat px-10 py-4 bg-[#F7F8F8] rounded-xl">
+                <button id="A2" class="seat px-10 py-4 mr-3 bg-[#F7F8F8] rounded-xl">
                   A2
                 </button>
               </div>
@@ -257,7 +257,7 @@
                 <button id="B1" class="seat px-10 py-4 bg-[#F7F8F8] rounded-xl">
                   B1
                 </button>
-                <button id="B2" class="seat px-10 py-4 bg-[#F7F8F8] rounded-xl">
+                <button id="B2" class="seat px-10 py-4 mr-3 bg-[#F7F8F8] rounded-xl">
                   B2
                 </button>
               </div>
@@ -276,7 +276,7 @@
                 <button id="C1" class="seat px-10 py-4 bg-[#F7F8F8] rounded-xl">
                   C1
                 </button>
-                <button id="C2" class="seat px-10 py-4 bg-[#F7F8F8] rounded-xl">
+                <button id="C2" class="seat px-10 py-4 mr-3 bg-[#F7F8F8] rounded-xl ">
                   C2
                 </button>
               </div>
@@ -295,7 +295,7 @@
                 <button id="D1" class="seat px-10 py-4 bg-[#F7F8F8] rounded-xl">
                   D1
                 </button>
-                <button id="D2" class="seat px-10 py-4 bg-[#F7F8F8] rounded-xl">
+                <button id="D2" class="seat px-10 py-4 mr-3 bg-[#F7F8F8] rounded-xl">
                   D2
                 </button>
               </div>
@@ -315,7 +315,7 @@
                 <button id="E1" class="seat px-10 py-4 bg-[#F7F8F8] rounded-xl">
                   E1
                 </button>
-                <button id="E2" class="seat px-10 py-4 bg-[#F7F8F8] rounded-xl">
+                <button id="E2" class="seat px-10 py-4 mr-3 bg-[#F7F8F8] rounded-xl">
                   E2
                 </button>
               </div>
@@ -334,7 +334,7 @@
                 <button id="F1" class="seat px-10 py-4 bg-[#F7F8F8] rounded-xl">
                   F1
                 </button>
-                <button id="F2" class="seat px-10 py-4 bg-[#F7F8F8] rounded-xl">
+                <button id="F2" class="seat px-10 py-4 mr-3 bg-[#F7F8F8] rounded-xl">
                   F2
                 </button>
               </div>
@@ -353,7 +353,7 @@
                 <button id="G1" class="seat px-10 py-4 bg-[#F7F8F8] rounded-xl">
                   G1
                 </button>
-                <button id="G2" class="seat px-10 py-4 bg-[#F7F8F8] rounded-xl">
+                <button id="G2" class="seat px-10 py-4 mr-3 bg-[#F7F8F8] rounded-xl">
                   G2
                 </button>
               </div>
@@ -380,7 +380,7 @@
 
           <div class="flex justify-between">
 
-            <div id="seat-name" >
+            <div id="seat-name">
               <h1 class="text-lg font-semibold -[#030712] p-4">
                 seat <span id="selected-seat-count">0</span>
               </h1>
@@ -416,10 +416,12 @@
               Discount <span id="discount" class="font-bold">0</span> BDT
             </p>
           </div>
+          <!-- input field of coupon -->
           <div id="coupon-area" class="p-2 bg-white flex justify-between  w-[90%] rounded-xl mx-auto">
             <input type="text" name="" id="coupon-field" placeholder="Have any coupon?"
               class="p-3 focus:outline-none" />
-            <button id="coupon" class="btn btn-success bg-[#1DD100] border-none text-white">
+            <button onclick="couponButton()" id="applie-btn"
+              class="btn btn-success bg-[#1DD100] border-none text-white">
               Apply
             </button>
           </div>
@@ -429,7 +431,7 @@
             <h1 class="text-lg font-semibold text-[#030712] p-5">
               Grand Total Price
             </h1>
-            <span class="text-lg font-semibold -[#030712] p-5">0</span>
+            <span id="grand-Total" class="text-lg font-semibold -[#030712] p-5">0</span>
           </div>
 
           <!-------------------------input of passengers contact ----------------------->
@@ -454,11 +456,11 @@
             <input type="text" name="" id="email-id" placeholder="Enter your email id" class="p-3 focus:outline-none" />
 
           </div>
-
           <!-- disabled modal button -->
-
-          <button class="btn bg-[#1DD100] w-[90%] mt-4 mx-auto ml-5">
-            <h1>Next </h1>
+          <button onclick="my_modal_5.showModal()" id="next-button" class="btn bg-[#1DD100] w-[90%] mt-4 mx-auto ml-5">
+            <a href="">
+              <h1>Next </h1>
+            </a>
           </button>
           <div class="flex justify-center gap-2 mt-2 mb-4">
             <a href="">
@@ -468,16 +470,42 @@
               <h1 class="text-sm font-semibold text-[#030712] underline">Cancellation Policy</h1>
             </a>
           </div>
+          <!------------------------ Right side seat price calculation ends ------------------>
+      </section>
 
+      
+      <!-- Open the modal using ID.showModal() method -->
+      <button class="btn" onclick="my_modal_5.showModal()"></button>
+      <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <div class=" flex justify-center p-2">
+            <img src="./images/success.png" class="w-[30%]" alt="">
+          </div>
+          <h3 class="font-bold text-base text-center">SUCCESS</h3>
+          <h1 class="text-base text-center font-medium text-black mb-3">Thank you for Booking . We are working hard to
+            find the best service and deals for you.</h1>
+          <h1 class="text-sm text-center font-normal text-gray-500">Shortly you will find a confirmation in your email
+          </h1>
         </div>
 
-        <!------------------------ Right side seat price calculation ends ------------------>
-      </section>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <div class="flex justify-center  text-center mt-4">
+              <button class="btn px-10 py-3 rounded-full bg-green-500 ">Continue</button>
+            </div>
+
+
+
+          </form>
+        </div>
+        </div>
+      </dialog>
 
 
       <script src="script.js"></script>
   </main>
-  
+
 
   <footer class="bg-[#030712] p-20 hidden">
     <div class="flex justify-between mb-10">
@@ -486,7 +514,7 @@
           <h1 class="text-4xl font-extrabold">Select My Ticket</h1>
           <p>
             Select My Ticket is reliable and secure online ticket booking platform. <br>
-             Keep an eye to get exclusive deals tailored for your needs.
+            Keep an eye to get exclusive deals tailored for your needs.
           </p>
         </div>
       </aside>
